@@ -1,6 +1,17 @@
 #!/usr/bin/env python3
-import requests
-
+import os
+try:
+    import requests
+except Exception as Err:
+    print("This Script Requires Module: reqests\n Installing requests")
+    try:
+        os.system("sudo pip3 install requests")
+    except Exception:
+        try:
+            os.system("pip install requests")
+        except Exception as bummer:
+            ok=input(str(bummer))
+            exit()
 logo="""
 
                     ________  ________  ________                                       
@@ -27,7 +38,7 @@ logo="""
 """ 
 start = "<td>"#div.class for our "hostname"
 end = "</td>"#^                                       
-class Color:#Bash Colors
+class Color:
     Red = '\u001b[31;1m'
     Green = '\u001b[32;1m'
     Yellow = '\u001b[33;1m'
