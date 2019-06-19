@@ -26,7 +26,7 @@ logo="""
 """ 
 start = "<td>"#div.class for our "hostname"
 end = "</td>"#^                                       
-class color:
+class Color:
     Red = '\u001b[31;1m'
     Green = '\u001b[32;1m'
     Yellow = '\u001b[33;1m'
@@ -35,7 +35,7 @@ class color:
     Cyan = '\u001b[36;1m'
     Bright_White = '\u001b[37;1m'
     
-colored_logo = str(color.Red + logo)    
+colored_logo = str(Color.Red + logo)    
 def do():
     print('   Api To psnresolver.org By Chad Groom\n')
     print(colored_logo)
@@ -78,30 +78,29 @@ RESULTS:
 
 _______________________________________________________________________________________________________
 
-IP: """ + color.Green + re_ip + """
+IP: """ + Color.Green + re_ip + """
 
-ISP: """ + color.Cyan + re_isp + """
+ISP: """ + Color.Cyan + re_isp + """
 
-ORG: """ + color.Red + re_org + """
+ORG: """ + Color.Red + re_org + """
 
-HOSTNAME: """ + color.Magenta + re_hostname + """
+HOSTNAME: """ + Color.Magenta + re_hostname + """
 
-CITY: """ + color.Blue + re_city + """
+CITY: """ + Color.Blue + re_city + """
 
-COUNTRY: """ + color.Green + re_country + """
+COUNTRY: """ + Color.Green + re_country + """
 
-ASN: """ + color.Cyan + re_asn + """
+ASN: """ + Color.Cyan + re_asn + """
 
-INTEGRITY: """ + color.Blue + integ_char + """
+INTEGRITY: """ + Color.Blue + integ_char + """
 
-IS CACHED: """ + color.Red + cache_char + """
+IS CACHED: """ + Color.Red + cache_char + """
 
-CURRENCY: """ + color.Green + re_curr + """
+CURRENCY: """ + Color.Green + re_curr + """
 _______________________________________________________________________________________________________
 
 """)
-    time.sleep(10)
-    ex=input(color.Bright_White + '\nHit [ENTER] To Restart Or CTRL + C To Exit\n')
+    ex=input(Color.Bright_White + '\nHit [ENTER] To Restart Or CTRL + C To Exit\n')
     do()
 
 do()    
