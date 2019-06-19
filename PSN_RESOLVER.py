@@ -26,7 +26,7 @@ logo="""
 """ 
 start = "<td>"#div.class for our "hostname"
 end = "</td>"#^                                       
-class Color:
+class Color:#Bash Colors
     Red = '\u001b[31;1m'
     Green = '\u001b[32;1m'
     Yellow = '\u001b[33;1m'
