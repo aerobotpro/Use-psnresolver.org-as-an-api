@@ -48,7 +48,7 @@ def do():
         oops=open("psn_res_error_log.txt", "+w")
         oops.write(str(Error))
         oops.close()
-        lookup()
+        do()
     html_str = s.text
     ip=str((html_str.split(start))[1].split(end)[0])
     re=requests.get('https://json.geoiplookup.io/' + ip)
