@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-#By Mirrorz#4560
+#By Mirrorz:coffee:#4560
 import os
 try:
     import requests
