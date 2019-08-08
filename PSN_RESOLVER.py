@@ -37,8 +37,8 @@ logo="""
                                                                                        
 
 """ 
-start = "<td>"#div.class for our "hostname"
-end = "</td>"#^                                       
+start = "<td>"
+end = "</td>"                                      
 class Color:
     Red = '\u001b[31;1m'
     Green = '\u001b[32;1m'
@@ -50,7 +50,7 @@ class Color:
     
 colored_logo = str(Color.Red + logo)    
 def do():
-    print('   Api To psnresolver.org By Chad Groom\n')
+    print('   Api To psnresolver.org By Lixxard\n')
     print(colored_logo)
     name=input(Color.Green+"Enter Gamertag: ")
     try:
