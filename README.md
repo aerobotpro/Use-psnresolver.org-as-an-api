@@ -3,4 +3,4 @@ This script allows us to send requests with searched gamertag(Playstation 3) to 
 
 ## Requirements ##
 * Python3.xx
-* Python Module: 'requests'
+
