@@ -50,7 +50,7 @@ class Color:
     
 colored_logo = str(Color.Red + logo)    
 def do():
-    print('   Api To psnresolver.org By Lixxard\n')
+    print('Psnresolver.org By Octolus\n')
     print(colored_logo)
     name=input(Color.Green+"Enter Gamertag: ")
     try:
