@@ -1,18 +1,8 @@
 #!/usr/bin/env python3
-#By Mirrorz:coffee:#4560
+#By Aero
 import os
-try:
-    import requests
-except Exception as Err:
-    print("This Script Requires Module: reqests\n Installing requests")
-    try:
-        os.system("sudo pip3 install requests")
-    except Exception:
-        try:
-            os.system("pip install requests")
-        except Exception as bummer:
-            ok=input(str(bummer))
-            exit()
+import requests
+
 logo="""
 
                     ________  ________  ________                                       
